@@ -106,10 +106,10 @@ def answer_questions():
 
     # Look up parameters in documentation:
     # https://ibm.github.io/watson-machine-learning-sdk/foundation_models.html#
-    model_type = ModelTypes.FLAN_UL2
-    max_tokens = 100
-    min_tokens = 20
-    decoding = DecodingMethods.GREEDY
+    model_type = ModelTypes.LLAMA_2_70B_CHAT
+    max_tokens = 500
+    min_tokens = 50
+    decoding = DecodingMethods.SAMPLE
     stop_sequences = ['.']
 
     # Get the model
